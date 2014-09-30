@@ -1,0 +1,22 @@
+{
+  "name": "b-tags-filter",
+  "version": "0.0.0",
+  "homepage": "https://github.com/VovanR/b-tags-filter",
+  "license": "MIT",
+  "repository": "VovanR/b-tags-filter",
+  "author": {
+    "name": "VovanR",
+    "url": "http://vovanr.com/"
+  },
+  "devDependencies": {
+    "bower": "",
+    "gulp": "",
+    "gulp-jscs": "",
+    "gulp-jshint": "",
+    "gulp-mocha-phantomjs": "",
+    "gulp-notify": "",
+    "jscs": "",
+    "jscs-jsdoc": "",
+    "jshint-stylish": ""
+  }
+}
