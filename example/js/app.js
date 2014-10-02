@@ -4,7 +4,7 @@
 
 define([
     'jquery',
-    '../modules/tags-filter',
+    '../../index',
 ], function (
     $,
     TagsFilter

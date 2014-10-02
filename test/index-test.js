@@ -1,7 +1,7 @@
 requirejs([
     '../vendor/chai/chai',
     'jquery',
-    '../js/modules/tags-filter',
+    '../index',
 ], function (
     chai,
     $,

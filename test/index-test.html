@@ -17,16 +17,16 @@
 
         <div id="fixtures"></div>
 
-        <div id="fixture-template" style="display: none">
+        <div id="fixture-template" style="display: none;">
         </div>
 
 
         <script src="../vendor/mocha/mocha.js"></script>
         <script src="../vendor/requirejs/require.js"></script>
         <script>
-        requirejs.config.baseUrl = '../js/';
-        requirejs(['../js/common'], function (common) {
-            requirejs(['../test/tags-filter-test']);
+        requirejs.config.baseUrl = './';
+        requirejs(['../common'], function (common) {
+            requirejs(['./index-test']);
         });
         </script>
     </body>
