@@ -11,8 +11,11 @@
   "devDependencies": {
     "bower": "",
     "gulp": "",
+    "gulp-autoprefixer": "",
+    "gulp-csso": "",
     "gulp-jscs": "",
     "gulp-jshint": "",
+    "gulp-less": "",
     "gulp-mocha-phantomjs": "",
     "jscs": "",
     "jscs-jsdoc": "",

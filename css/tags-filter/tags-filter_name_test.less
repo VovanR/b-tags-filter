@@ -1,0 +1,42 @@
+.b-tags-filter {
+    &._name_test {
+        padding: 10px 15px;
+        background-color: wheat;
+
+        .b-tags-filter__layout {
+            margin: 0 0 -5px -10px;
+            padding: 0;
+
+            &-unit {
+                margin: 0 0 5px 10px;
+                padding: 0;
+            }
+        }
+
+        .b-tags-filter__item {
+            padding: 0 17px;
+            height: 30px;
+            background-color: white;
+            color: #333;
+            font-size: 16px;
+            line-height: 30px;
+
+            &:before {
+                margin: 0 3px 0 -3px;
+                content: '✗';
+            }
+
+            &:hover {
+            }
+
+            &._state_active {
+                background-color: olivedrab;
+                color: white;
+
+                &:before {
+                    content: '✓';
+                }
+            }
+        }
+    }
+}
