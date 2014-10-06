@@ -3,30 +3,52 @@
  */
 
 define([
+    'jquery',
 ], function (
+    $
 ) {
 
     'use strict';
 
     var TagsFilter;
+    var activeClass = '_state_active';
 
     /**
      * TagsFilter module
      *
+     * @param {Object} o Options
+     * @param {jQuery} o.block
      * @constructor
      */
-    TagsFilter = function () {
-        this._name = 'TagsFilter';
+    TagsFilter = function (o) {
+        this._block = o.block;
+
+        this._initialize();
     };
 
     TagsFilter.prototype = {
         /**
-         * Returns module name
+         * Initialize
          *
-         * @returns {String} name
+         * @private
          */
-        getName: function () {
-            return this._name;
+        _initialize: function () {
+            console.info('TagsFilter init');
+
+            this._bindControls();
+        },
+
+        /**
+         * Bindings
+         *
+         * @private
+         */
+        _bindControls: function () {
+            this._block.on('click', '.js-tags-filter__item', function (e) {
+                $(this).toggleClass(activeClass);
+
+                e.preventDefault();
+            });
         },
     };
 
